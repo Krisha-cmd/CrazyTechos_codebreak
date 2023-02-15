@@ -1,9 +1,9 @@
-let slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-let slideInterval = setInterval(nextSlide, 5000);
-
-function nextSlide() {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add('active');
-}
+/*var box1 = document.getElementById("slider");
+		var box2 = document.getElementById("chatslider");
+    var box3 = document.getElementById("map_canvas");
+		
+		// Function to make box2 longer
+		function toggleSlider() {
+      map_canvas.classList.add("shorter");
+			chatslider.classList.add("longer");
+		}*/

@@ -66,6 +66,7 @@ body {
     margin-bottom: 10px;
     cursor: pointer;
     transition: 0.15s;
+    border-bottom:2px solid #2A6041;
   }
 
     .group:hover {
@@ -82,16 +83,43 @@ body {
   .chat-container{
     display: flex;
     flex-direction: column;
+    transition: 0.2s;
   }
+  #chatslider{
+    transition: 0.2s;
+  }
+  #map_canvas{
+    transition: 0.2s;
+  }
+  .short{
+    height:40%
+  }
+  .longer{
+    height:50%;
+  }
+  
   .slider-bar{
     width: 100%;
     height:6px;
     background-color: #2A6041;
+    cursor: pointer;
+		transition: all 0.2s;
+  }
+  .chats{
+    background-color:#98DF94;
+    flex:1;
+    transition: 0.2s;
   }
   .textareap{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 60px;
+    padding-bottom: 10px;
+    background-color:#98DF94 ;
+  }
+  textarea{
+    background-color:#98DF94 ;
   }
   #chat-input{
     margin-top:16px;
@@ -99,6 +127,7 @@ body {
     width: 92%;
     height: 40px;
     position:relative;
+    
   }
   .send-button{
     margin:10px 0 0 0;

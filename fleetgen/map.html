@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="map.css">
     <title>Document</title>
 </head>
-<body>>
+<body>
+  <script src="script.js"></script>
     <div class="container">
             <div class="sidebar">
                 <div class="profile"><div class="profile-button">
@@ -26,8 +27,9 @@
             </div>
       <div class="right-panel">
         <div id="map_canvas"></div>
-        <div class="chat-contianer">
-            <div class="slider-bar"></div>
+        <div class="chat-container" id="chatslider">
+            <div class="slider-bar" onclick="toggleSlider()" id="slider"></div>
+            <div class="chats"></div>
             <div class="textareap">
               <textarea
               placeholder="Type your message here..."

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+/*import React, { useState } from "react"
 
 import logo from './logo.svg';
 import './App.css';
@@ -19,4 +19,17 @@ function App() {
   );
 }
 
+export default App;*/
+import React from 'react';
+import Connector from './Connector';
+
+function App() {
+  return (
+    <div className="App">
+      <Connector />
+    </div>
+  );
+}
+
 export default App;
+

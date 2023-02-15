@@ -1,25 +1,20 @@
+import React, { useState } from "react"
+
 import logo from './logo.svg';
 import './App.css';
-import { login } from "./login";
-import { register } from "./register";
+import { Login } from "./login";
+import { Register } from "./register";
 
 function App() {
+  const [currentForm, setCurrentForm]= useState('login')
+  const toggleform =(formname)=>{
+    setCurrentForm(formname);
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='initial'>
+      <div class="background"></div>
+      { currentForm === "login"?<Login onFormSwitch={toggleform}/> :<Register onFormSwitch={toggleform}/>}
     </div>
   );
 }

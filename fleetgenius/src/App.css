@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url('https://storage.googleapis.com/gweb-cloudblog-publish/original_images/footprints.gif');
+	background-size: cover;
+	}
+
+.form-container {
+	position: relative;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	max-width: 500px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+	text-align: center;
+	margin: 0 0 20px;
+	color: #777;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+	display: flex;
+	flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+	margin: 10px 0 5px;
+	color: #777;
+}
+
+input {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+#toggle-login {
+    color: blue; /* set the initial color of the link */
+    text-decoration: none; /* remove underline from link */
+}
+
+#toggle-login:hover {
+    color: blueviolet; /* set the color of the link when hovered over */
+}
+
+#loginbutton {
+	padding: 10px;
+	background-color: #98DF94;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#loginbutton:hover {
+	background-color: #2A6041;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#loginbutton:focus {
+	background-color: #2962ff;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#error-message {
+	color: #f00;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#toggle-login, #toggle-signup {
+	margin-top: 20px;
+  border: none;
+  background-color: white;
+	color: #777;
+	text-align: center;
+	text-decoration: underline;
+	cursor: pointer;
 }

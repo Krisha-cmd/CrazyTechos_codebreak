@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up/Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="background"></div>
+	<div class="form-container">
+        <script src="hashing.js"></script>
+		<h2>Sign Up / Login</h2>
+		<form id="login-form" class="form">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+            <input type="hidden" id="hashedPassword" name="hashedPassword" value="<%= createHash(password.value) %>">
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login</button>
+		</form> <br>
+        <a>Don't have an account?</a>
+        <a href="signup.html" id="toggle-login" > Sign up</a>
+	</div>
+</body>
+</html>

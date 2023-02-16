@@ -11,7 +11,8 @@ The proposed system has a comprehensive logistics management app where every dri
 # The Solution
 Introducing  our innovative software designed FleetGenius for truck drivers and distributors, which enables real-time location tracking and group communication. Our software offers an intuitive and user-friendly interface that allows drivers to easily see each other's locations and communicate with each other, while also providing distributors with the ability to monitor the location of their trucks.
 
-Our software helps to increase efficiency and safety in the transportation industry by allowing drivers to stay connected with their colleagues and distributors, making it easier to coordinate and plan routes. With our software, truck drivers can easily view the location of their colleagues on the map and communicate with each other through a built-in chat feature.
+Our software helps to increase efficiency and safety in the transportation industry by allowing drivers to stay connected with their colleagues and distributors, making it easier to coordinate and plan routes. With#  our soft
+1.Connects truck driversre, truck drivers can easily view the location of their colleagues on the map and communicate with each other through a built-in chat feature.
 
 Furthermore, distributors can also monitor the location of their trucks in real-time, making it easier to manage and track their fleet. With our software, trucking companies can streamline their operations, improve communication, and enhance safety on the roads.
 
@@ -25,6 +26,18 @@ We believe that our software has the potential to transform the trucking industr
 5. Hashing of chat messages
 6. Group Chat system
 7. Time Estimation Calculation
+8. Access Management
 
+# Functions
+1. Connects truck drivers by sharing location
+2. Provides Rough Time estimation for better planning
+3. Provides multiple stop routing
+4. Provides route sharing features
+
+# Requirements
+1. node.js
+2. html css js
+3. firebase 11.23.1
+4. Google Maps API
 
 

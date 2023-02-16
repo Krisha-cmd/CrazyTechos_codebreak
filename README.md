@@ -18,5 +18,13 @@ Furthermore, distributors can also monitor the location of their trucks in real-
 We believe that our software has the potential to transform the trucking industry by improving communication and tracking capabilities, and we are committed to providing an outstanding user experience for our customers.
 
 # Functionalities
+1. Realtime Location Tracking
+2. Multiple User Location Tracking
+3. Authentication
+4. Hashing of passwords
+5. Hashing of chat messages
+6. Group Chat system
+7. Time Estimation Calculation
+
 
 

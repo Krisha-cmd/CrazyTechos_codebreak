@@ -1,70 +1,9 @@
-# Getting Started with Create React App
+Problem statement: Time-Management of Fleet
+Solution: Group Route Tracking System with realtime time estimation and simultaneous chatting features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#The Problem
+Logistics is an important part in the industry. But with the expand in industries, the networks grow more complex. The inventory management is another aspect that needs proper planning and reduced timings and more systematic working environment can help us deal with this problem. Also synchronization between the retailer/vendor/supplier and the delivery management system and the customer is another difficulty. With this proposed logistics management system these problems are promisingly dealt with. This is an application to manage an optimized solution for local logistics and transportation needs for both businesses and consumers in the urban areas. Timely delivery of goods and products to appropriate customer is necessary. The prevalent logistics systems are efficient but not effective enough. There are multiple drawbacks which eventually lead to the loss of the customer. The proposed logistics management system aims to achieve an integrated logistics system which entirely controls the logistics and also controls the route of the trucks to the said destination with care on time. The system also comes with a comprehensive route tracker which helps to find the optimal route for the delivery of products and also keeps a track of a group of trucks. Thus, the proposed system helps the drivers and their supervisors to ensure safe, secure and proper delivery of items.
 
-## Available Scripts
+The proposed system has a comprehensive logistics management app where every driver can feed in the source and destination addresses, and can simultaneously watch authorized truck driver's routes along with timing estimations of their arrival, consequently allowing them to make better routing desicions. Once registered the application allows the user to create group chats of other users they would like to supervise. Using google Api optimal route tracking is taken care of, our main concern lies in integrating everyone's routes together.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#Functionalities

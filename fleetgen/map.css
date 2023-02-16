@@ -69,12 +69,19 @@ body {
     border-bottom:2px solid #2A6041;
   }
 
+  #newgroup{
+    background-color: #2A6041;
+    border-radius: 6px;
+  }
+
+  #newgroup:hover{
+    color: #98DF94;
+  }
     .group:hover {
         color:#98DF94;
 
 }
   .locations{
-    
   }
   .right-panel {
     display: grid;
@@ -106,7 +113,7 @@ body {
 		transition: all 0.2s;
   }
   .chats{
-    background-color:#98DF94;
+    background-color:rgb(220, 207, 192);
     flex:1;
     transition: 0.2s;
   }
@@ -116,10 +123,10 @@ body {
     align-items: center;
     height: 60px;
     padding-bottom: 10px;
-    background-color:#98DF94 ;
+    background-color:rgb(220, 207, 192) ;
   }
   textarea{
-    background-color:#98DF94 ;
+    background-color:antiquewhite ;
   }
   #chat-input{
     margin-top:16px;
@@ -134,10 +141,10 @@ body {
     padding: 10px;
     margin-left:16px;
     transition: 0.15s;
-    background-color: #000;
-    color: #98DF94;
+    background-color: #2A6041;
+    color:antiquewhite;
     border-radius: 12px;
   }
   .send-button:hover{
-    color: #2A6041;
+    color: #98DF94;
   }

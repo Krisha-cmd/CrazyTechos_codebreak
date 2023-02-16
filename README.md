@@ -8,4 +8,15 @@ Logistics is an important part in the industry. But with the expand in industrie
 
 The proposed system has a comprehensive logistics management app where every driver can feed in the source and destination addresses, and can simultaneously watch authorized truck driver's routes along with timing estimations of their arrival, consequently allowing them to make better routing desicions. Once registered the application allows the user to create group chats of other users they would like to supervise. Using google Api optimal route tracking is taken care of, our main concern lies in integrating everyone's routes together.
 
+# The Solution
+Introducing  our innovative software designed FleetGenius for truck drivers and distributors, which enables real-time location tracking and group communication. Our software offers an intuitive and user-friendly interface that allows drivers to easily see each other's locations and communicate with each other, while also providing distributors with the ability to monitor the location of their trucks.
+
+Our software helps to increase efficiency and safety in the transportation industry by allowing drivers to stay connected with their colleagues and distributors, making it easier to coordinate and plan routes. With our software, truck drivers can easily view the location of their colleagues on the map and communicate with each other through a built-in chat feature.
+
+Furthermore, distributors can also monitor the location of their trucks in real-time, making it easier to manage and track their fleet. With our software, trucking companies can streamline their operations, improve communication, and enhance safety on the roads.
+
+We believe that our software has the potential to transform the trucking industry by improving communication and tracking capabilities, and we are committed to providing an outstanding user experience for our customers.
+
 # Functionalities
+
+

@@ -40,4 +40,13 @@ We believe that our software has the potential to transform the trucking industr
 3. firebase 11.23.1
 4. Google Maps API
 
+# Expected Output
+![image](https://user-images.githubusercontent.com/91652136/219242698-7840a127-cb9a-4d74-83ba-364ed1319ed0.png)
+![image](https://user-images.githubusercontent.com/91652136/219243001-cccdafbd-debd-4259-86cd-1ca5373690cb.png)
+
+![image](https://user-images.githubusercontent.com/91652136/219248580-9babf702-46dd-454c-b0cc-b8edc799676a.png)
+![image](https://user-images.githubusercontent.com/91652136/219248693-7842a4fb-42be-4577-b835-600459e4f9e4.png)
+
+![image](https://user-images.githubusercontent.com/91652136/219248758-7315d8c7-06a3-457b-9b8f-5ace141ea9cc.png)
+
 

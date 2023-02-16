@@ -39,6 +39,7 @@ We believe that our software has the potential to transform the trucking industr
 2. html css js
 3. firebase 11.23.1
 4. Google Maps API
+5. php
 
 # Expected Output
 ![image](https://user-images.githubusercontent.com/91652136/219242698-7840a127-cb9a-4d74-83ba-364ed1319ed0.png)
@@ -49,4 +50,23 @@ We believe that our software has the potential to transform the trucking industr
 
 ![image](https://user-images.githubusercontent.com/91652136/219248758-7315d8c7-06a3-457b-9b8f-5ace141ea9cc.png)
 
+
+# Implementation
+1. Building a react app through npm commands
+2. Connecting firebase realtime databse with the react app
+3. deploying the firebase datasystem
+4. creating html and css UI for login and sign up credentials
+5. hashing the new passwords and storing all credentials in the database
+6. authentication of email and password for sign in
+7. managing/ handling cookies for logged in accounts
+8. google map api integration with the front end application
+9. realtime and short term database for storing to from locations
+10. geolocation or coordinates (longitude and latitude) to be fetched from API
+11. Directions and route calculated 
+12. Spots poltted on the map
+13. Distance and time calculated using api
+14. analysis of common and near by points in the route and estimation of the time required by farthest truck driver to reach point
+15. access to specific accounts
+
+# login and Chatting System
 

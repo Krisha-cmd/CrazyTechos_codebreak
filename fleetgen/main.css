@@ -1,0 +1,36 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+  }
+  

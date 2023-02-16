@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Document</title>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key={{ config('app.google_maps_api') }}&libraries=places&callback=initAutocomplete"
+    async defer>
+</script>
+
+<script src="{{ mix('js/autocomplete.js') }}" async defer></script>
+</head>
+<body onload="initMap()">
+  <script src="script.js"></script>
+    <div class="container">
+            <div class="sidebar">
+                <div class="profile" ><div class="profile-button">
+                    <img onclick="toggleProfile()"
+                      src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png"
+                      alt="profile icon"
+                    /></div>
+                    <div onclick="toggleProfile()" class="profile-details">UserName</div></div>
+            <div class="contact-container"><div class="contacts">
+                <button class="group" >Group 1</button>
+                <button class="group" >Group 2</button>
+                <button class="group" >Group 3</button>
+                <button class="group" >Group 4</button>
+                <button id="newgroup" onclick="openPopup()" >Add group+</button>
+              </div></div>
+              <div id="popup-container">
+                <button class="exit" onclick="exitPop()">x</button>
+                <div class="search-box">
+                  <input type="text" placeholder="Search...">
+                  <button type="submit"><i class="fa fa-search"></i>+</button>
+                </div>
+                
+                <ul class="contact-list">
+                  <li id="user1" onclick="selected(id)" >
+                    <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                    <h3>John Doe</h3>
+                  </li>
+                  <li id="user1" onclick="selected(id)">
+                    <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                    <h3>Jane Doe</h3>
+                  </li>
+                  <li id="user1" onclick="selected(id)">
+                    <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                    <h3>Bob Smith</h3>
+                  </li>
+                </ul>
+                <div class="selected">Add</div>
+              </div>
+    <div class="locations">
+      <div class="locals">
+        <form id="form-local" >
+          <div class="form-group">
+            <b><label for="from-input">From</label></b><!--input: from-->
+            <input type="search" class="form-control" id="from-input" placeholder="From">
+          </div>
+          <div class="form-group">
+            <b><label for="to-input">To</label></b><!--input: to-->
+            <input type="search" class="form-control" id="to-input" placeholder="To">
+          </div>
+          <div class="form-group">
+            <b><label for="step-at">Stop</label></b><!--input: step at-->
+            <input type="search" class="form-control" id="step-at" placeholder="Step At">
+          </div>
+          <button onsubmit="calculateRoute(event)" value="Calculate Distance" id="submit-locals" type="submit" class="btn-primary">Submit</button><!--submit input form-->
+        </form>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="distance"></div>
+    <div id="duration"></div>
+
+    <script>
+        var map, directionsService, directionsRenderer;
+        var autocompleteFrom, autocompleteTo, autocompleteStepAt;
+
+        function initAutocomplete() {
+            autocompleteFrom = new google.maps.places.Autocomplete(
+                document.getElementById('from-input'));
+            autocompleteTo = new google.maps.places.Autocomplete(
+                document.getElementById('to-input'));
+            autocompleteStepAt = new google.maps.places.Autocomplete(
+                document.getElementById('step-at'));
+        }
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 37.7749, lng: -122.4194},
+                zoom: 10
+            });
+            directionsService = new google.maps.DirectionsService();
+            directionsRenderer = new google.maps.DirectionsRenderer({
+                map: map,
+                suppressMarkers: true
+            });
+        }
+    
+        function calculateRoute(event) {
+            event.preventDefault();
+            var from = document.getElementById("from").value;
+            var to = document.getElementById("to").value;
+            var step_at = document.getElementById("step_at").value;
+            if (step_at) {
+                var waypoints = [{
+                    location: step_at,
+                    stopover: true
+                }];
+            } else {
+                var waypoints = [];
+            }
+            directionsService.route({
+                origin: from,
+                destination: to,
+                waypoints: waypoints,
+                travelMode: 'DRIVING'
+            }, function(response, status) {
+                if (status === 'OK') {
+                    directionsRenderer.setDirections(response);
+                    var distance = response.routes[0].legs[0].distance.text;
+                    var duration = response.routes[0].legs[0].duration.text;
+                    document.getElementById("distance").innerHTML = "Distance: " + distance;
+                    document.getElementById("duration").innerHTML = "Duration: " + duration;
+                } else {
+                    alert('Directions request failed due to ' + status);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    background-image: url('https://www.apple.com/newsroom/images/product/apps/standard/Apple_Maps_01302020_LP_hero.jpg.og.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    animation: gradient 25s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    max-width: 500px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="number"] {
+    width: 95%;
+    padding: 6px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2)
+  }  
+
+  .container label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .container input[type="text"], .container input[type="email"], .container input[type="password"], .container input[type="date"] {
+    width: 95%;
+    padding: 6px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  button {
+    padding: 10px;
+    margin:0 0 10px 0;
+    background-color: #98DF94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2A6041;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:visited {
+    background-color: #663109;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #toggle-login, #toggle-signup {
+    margin-top: 20px;   
+    color: #0a0a0a;
+    text-align: center;
+    text-decoration: none; /* remove underline from link */
+  }
+  
+  #toggle-login:hover {
+    color: blueviolet; /* set the color of the link when hovered over */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+  
+    .form {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"] {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+    }
+}

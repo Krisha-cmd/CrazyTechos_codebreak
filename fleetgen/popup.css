@@ -1,0 +1,88 @@
+body {
+    background-size: cover;
+    font-family: sans-serif;
+  }
+#popup-container {
+    display: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  vertical-align:middle;
+  border-radius: 12px;
+  background-color: #777;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  position: absolute;
+  top:40px;
+}
+.selected{
+    padding:10px;
+    background-color:#98DF94;
+    border-radius: 12px;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin: 2px;
+  text-align: center;
+  justify-content: center;
+}
+
+.search-box input[type="text"] {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  padding: 5px;
+  width: 80%;
+}
+
+.search-box button[type="submit"] {
+  background-color: #ccc;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  width: 20%;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.contact-list li img {
+    margin-top: 2px;
+    margin-bottom: 1px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-list li h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-list li p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+.exit{
+    border: none;
+    background-color: #777;
+    color: red;
+    font-size: medium;
+    position: absolute;
+    right: 2px;
+    top:2px;
+
+}

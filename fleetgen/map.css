@@ -37,7 +37,7 @@ body {
     
   }
   .profile{
-    padding-left: 20px;
+    padding-left: 74px;
     transition: 0.15s;
   }
   .profile-details:hover{
@@ -148,4 +148,26 @@ body {
   }
   .send-button:hover{
     color: #98DF94;
+  }
+
+  #form-local{
+    display: grid;
+    grid-template-rows: 20px;
+    row-gap: 10px;
+  }
+  .form-group{
+    display: grid;
+    grid-template-columns:50px 1fr ;
+  }
+  .btn-primary{
+    border-radius: 6px;
+    background-color: #98DF94;
+  }
+  .form-horizontal{
+    margin-top:10px;
+  }
+  .form-group-info{
+    display: grid;
+    grid-template-columns:160px 1fr ;
+    
   }

@@ -27,3 +27,14 @@
     function toggleProfile(){
       window.location.href = "profile.html";
     }
+    function toggleSignup(){
+      window.location.href = "signup.html";
+    }
+    const myForm = document.getElementById("login-form");
+
+    function toggleMain(){
+      event.preventDefault(); // prevent form from submitting normally
+
+        window.location.href = "map.html";
+      };
+    

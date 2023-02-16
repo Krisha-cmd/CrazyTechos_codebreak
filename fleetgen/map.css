@@ -37,6 +37,7 @@ body {
     
   }
   .profile{
+    padding-left: 20px;
     transition: 0.15s;
   }
   .profile-details:hover{

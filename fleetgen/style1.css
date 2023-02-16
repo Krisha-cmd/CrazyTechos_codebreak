@@ -86,4 +86,33 @@ body {
     color: blueviolet; /* set the color of the link when hovered over */
   }
 
+  @media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
   
+    .form {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"] {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+    }
+}

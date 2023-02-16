@@ -1,118 +1,268 @@
 * {
-    box-sizing: content-box;
-    font-family: sans-serif;
+  box-sizing: content-box;
+  font-family: sans-serif;
 }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://www.apple.com/newsroom/images/product/apps/standard/Apple_Maps_01302020_LP_hero.jpg.og.jpg');
+  background-size: cover;
+  animation: background-animation 10s infinite;
+}
+
+@keyframes background-animation {
+  0% {
+    background-position: 0% 100%;
   }
-  
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url('https://www.apple.com/newsroom/images/product/apps/standard/Apple_Maps_01302020_LP_hero.jpg.og.jpg');
-    background-size: cover;
-    animation: background-animation 10s infinite;
+  50% {
+    background-position: 100% 0%;
   }
-  
-  @keyframes background-animation {
-    0% {
-      background-position: 0% 100%;
-    }
-    50% {
-      background-position: 100% 0%;
-    }
-    100% {
-      background-position: 0% 100%;
-    }
+  100% {
+    background-position: 0% 100%;
   }
-  
-  .form-container {
-    position: relative;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  color: hsl(0, 3%, 6%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  color: #020202;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#toggle-login {
+  color: rgb(107, 107, 226); /* set the initial color of the link */
+  text-decoration: none; /* remove underline from link */
+}
+
+#toggle-login:hover {
+  color: blueviolet; /* set the color of the link when hovered over */
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px;
+  background-color: #98DF94;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2A6041;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:visited {
+  background-color: #663109;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  box-sizing: content-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://www.apple.com/newsroom/images/product/apps/standard/Apple_Maps_01302020_LP_hero.jpg.og.jpg');
+  background-size: cover;
+  animation: background-animation 10s infinite;
+}
+
+@keyframes background-animation {
+  0% {
+    background-position: 0% 100%;
   }
-  
-  h2 {
-    text-align: center;
-    margin: 0 0 20px;
-    color: hsl(0, 3%, 6%);
+  50% {
+    background-position: 100% 0%;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
+  100% {
+    background-position: 0% 100%;
   }
-  
+}
+
+.form-container {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  color: hsl(0, 3%, 6%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  color: #020202;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#toggle-login {
+  color: rgb(107, 107, 226); /* set the initial color of the link */
+  text-decoration: none; /* remove underline from link */
+}
+
+#toggle-login:hover {
+  color: blueviolet; /* set the color of the link when hovered over */
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px;
+  background-color: #98DF94;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2A6041;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:visited {
+  background-color: #663109;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#error-message {
+  color: #f00;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Styles for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 600px) {
+  /* Style the form inputs to fit the smaller screen */
   label {
-    margin: 10px 0 5px;
-    color: #020202;
+    font-size: 14px;
   }
   
-  input {
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Adjust the button width and font size for the smaller screen */
+  button[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  /* Adjust the layout and spacing of the form */
+  .form {
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  #toggle-login {
-    color: rgb(107, 107, 226); /* set the initial color of the link */
-    text-decoration: none; /* remove underline from link */
-  }
-  
-  #toggle-login:hover {
-    color: blueviolet; /* set the color of the link when hovered over */
   }
 
   .form-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 65%;
-    max-width: 450px;
-    height: auto;
     margin: 0 auto;
+    max-width: 400px;
+  }
 }
-  
-  button {
-    padding: 10px;
-    background-color: #98DF94;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #2A6041;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  button:visited {
-    background-color: #663109;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  #error-message {
-    color: #f00;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  #toggle-login, #toggle-signup {
-    margin-top: 20px;
-    color: #0a0a0a;
-    text-align: center;
-  }
+
+
+#toggle-login, #toggle-signup {
+  margin-top: 20px;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+#error-message {
+  color: #f00;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#toggle-login, #toggle-signup {
+  margin-top: 20px;
+  color: #0a0a0a;
+  text-align: center;
+}

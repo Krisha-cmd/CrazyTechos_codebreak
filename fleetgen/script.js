@@ -23,3 +23,7 @@
       var id=document.getElementById(id);
       id.style.color="#98DF94";
     }
+
+    function toggleProfile(){
+      window.location.href = "profile.html";
+    }
